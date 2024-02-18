@@ -1026,3 +1026,4 @@ C:\Users\LENOVO\source\repos\BlazorAppDemo\BlazorAppDemo.Client\obj\Debug\net8.0
 C:\Users\LENOVO\source\repos\BlazorAppDemo\BlazorAppDemo.Client\obj\Debug\net8.0\refint\BlazorAppDemo.Client.dll
 C:\Users\LENOVO\source\repos\BlazorAppDemo\BlazorAppDemo.Client\obj\Debug\net8.0\BlazorAppDemo.Client.pdb
 C:\Users\LENOVO\source\repos\BlazorAppDemo\BlazorAppDemo.Client\obj\Debug\net8.0\ref\BlazorAppDemo.Client.dll
+C:\Users\LENOVO\source\repos\BlazorAppDemo\BlazorAppDemo.Client\obj\Debug\net8.0\BlazorAppDemo.Client.sourcelink.json
