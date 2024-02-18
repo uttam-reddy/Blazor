@@ -12,7 +12,7 @@ namespace BlazorAppDemo.Services
         {
             _context = context;
         }
-        public async Task<List<User>> GetAllUsers()
+        public async Task<List<Users>> GetAllUsers()
         {
             var users = await _context.Users.ToListAsync();
             return users;

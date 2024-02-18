@@ -4,7 +4,7 @@ namespace BlazorAppDemo.Services
 {
     interface IUserService
     {
-        Task<List<User>> GetAllUsers();
+        Task<List<Users>> GetAllUsers();
 
     }
 }

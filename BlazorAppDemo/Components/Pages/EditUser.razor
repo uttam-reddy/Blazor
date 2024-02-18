@@ -1,4 +1,6 @@
-﻿@page "/user"
+﻿@page "/edit-user"
+@page "/edit-user/{id:int}"
+
 @attribute [StreamRendering]
 
 @inject IUserService UserService
@@ -30,7 +32,7 @@ else
 
 @code {
 
-    List<Users> Users = null;
+    Users Users = new Users();
 
     protected override async Task OnInitializedAsync()
     {
