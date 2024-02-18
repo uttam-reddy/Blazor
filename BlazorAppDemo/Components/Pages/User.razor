@@ -1,8 +1,10 @@
 ﻿@page "/user"
 @attribute [StreamRendering]
 
-@inject IUserService UserService
 
+@inject IUserService UserService
+@inject NavigationManager NavigationManager
+@rendermode InteractiveServer
 
 <PageTitle>Weather</PageTitle>
 
@@ -28,6 +30,7 @@ else
     </ul>
 }
 
+<button @onclick="CreateGame" class="btn btn-primary">Add User</button>
 @code {
 
     List<Users> Users = null;
@@ -36,6 +39,11 @@ else
     {
         await Task.Delay(2000);
         Users = await UserService.GetAllUsers();
+    }
+
+    void CreateGame()
+    {
+        NavigationManager.NavigateTo("/edit-user");
     }
 
     

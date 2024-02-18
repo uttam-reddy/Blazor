@@ -1,46 +1,23 @@
 ﻿@page "/edit-user"
 @page "/edit-user/{id:int}"
 
-@attribute [StreamRendering]
-
-@inject IUserService UserService
 
 
-<PageTitle>Weather</PageTitle>
-
-
-
-@if (Users == null)
-{
-    <p><em>Loading...</em></p>
-}
-else if(Users.Count == 0)
-{
-    <p><em>No Users</em></p>
-}
-else
-{
-    <ul>
-        @foreach(var user in Users)
-        {
-            <li>
-                @user.Name
-            </li>
-        }
-    </ul>
-}
+<EditForm Model="user" OnSubmit="HandleSubmit">
+    <label>Name</label>
+    <InputText @bind-Value ="user.Name" >@user.Name</InputText>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</EditForm>
 
 @code {
+    [Parameter]
+    public int? Id { get; set; }
+    Users user = new Users { Name = string.Empty };
 
-    Users Users = new Users();
 
-    protected override async Task OnInitializedAsync()
+    async Task HandleSubmit()
     {
-        await Task.Delay(2000);
-        Users = await UserService.GetAllUsers();
+        
     }
 
-    
-
-    
 }
