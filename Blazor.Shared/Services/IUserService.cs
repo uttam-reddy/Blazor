@@ -1,8 +1,8 @@
-﻿using BlazorAppDemo.Models;
+﻿using Blazor.Shared.Models;
 
-namespace BlazorAppDemo.Services
+namespace Blazor.Shared.Services
 {
-    interface IUserService
+    public interface IUserService
     {
         Task<List<Users>> GetAllUsers();
         Task<Users> CreateUser(Users user);

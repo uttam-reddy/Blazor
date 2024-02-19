@@ -1,7 +1,8 @@
+using Blazor.Shared.Data;
+using Blazor.Shared.Services;
 using BlazorAppDemo.Client.Pages;
 using BlazorAppDemo.Components;
-using BlazorAppDemo.Data;
-using BlazorAppDemo.Services;
+
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,10 +11,16 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
+
+builder.Services.AddControllers();
+
 builder.Services.AddDbContext<DataContext>(options =>
 
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
+builder.Services.AddScoped(http => new HttpClient
+{
+    BaseAddress = new Uri(builder.Configuration.GetSection("baseuri").Value!)
+});
 builder.Services.AddScoped<IUserService, UserService>();
 
 var app = builder.Build();
@@ -31,7 +38,7 @@ else
 }
 
 app.UseHttpsRedirection();
-
+app.MapControllers();
 app.UseStaticFiles();
 app.UseAntiforgery();
 

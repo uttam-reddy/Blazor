@@ -1,7 +1,9 @@
 ﻿@page "/edit-user"
 @page "/edit-user/{id:int}"
+
 @inject IUserService userService
 
+@rendermode InteractiveWebAssembly
 
 <EditForm Model="user" OnSubmit="HandleSubmit" FormName="editUser">
     <label>Name</label>

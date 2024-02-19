@@ -1,8 +1,8 @@
-﻿using BlazorAppDemo.Data;
-using BlazorAppDemo.Models;
+﻿using Blazor.Shared.Data;
+using Blazor.Shared.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace BlazorAppDemo.Services
+namespace Blazor.Shared.Services
 {
     public class UserService : IUserService
     {

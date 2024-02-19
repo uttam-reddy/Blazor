@@ -1,4 +1,4 @@
-﻿namespace BlazorAppDemo.Models
+﻿namespace Blazor.Shared.Models
 {
     public class Users
     {

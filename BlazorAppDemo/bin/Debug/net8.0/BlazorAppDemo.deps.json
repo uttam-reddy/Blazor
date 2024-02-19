@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "BlazorAppDemo/1.0.0": {
         "dependencies": {
+          "Blazor.Shared": "1.0.0",
           "BlazorAppDemo.Client": "1.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly.Server": "8.0.2",
           "Microsoft.EntityFrameworkCore": "8.0.2",
@@ -663,8 +664,17 @@
           }
         }
       },
+      "Blazor.Shared/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.2"
+        },
+        "runtime": {
+          "Blazor.Shared.dll": {}
+        }
+      },
       "BlazorAppDemo.Client/1.0.0": {
         "dependencies": {
+          "Blazor.Shared": "1.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "8.0.2"
         },
         "runtime": {
@@ -1189,6 +1199,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "Blazor.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "BlazorAppDemo.Client/1.0.0": {
       "type": "project",

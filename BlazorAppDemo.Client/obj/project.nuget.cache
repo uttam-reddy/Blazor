@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "52SCJj4bBQxXfXkyS8fIwEAidQ4jXgZYN0Q5noHnM64g0nFWL1BlRBISVyDNF9RXjsRtrcK38HSVGfxeSfIVKA==",
+  "dgSpecHash": "ODRQL8NeZB0+rPZ7f3W6t7d4UujGbh5JDZE2rNdqJvuPuUXmWTH7HBwfQCDnsmttSojPDYdmCuhQHk5GZyb5tQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\LENOVO\\source\\repos\\BlazorAppDemo\\BlazorAppDemo.Client\\BlazorAppDemo.Client.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,11 @@
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.components.web\\8.0.2\\microsoft.aspnetcore.components.web.8.0.2.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\8.0.2\\microsoft.aspnetcore.components.webassembly.8.0.2.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.metadata\\8.0.2\\microsoft.aspnetcore.metadata.8.0.2.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.2\\microsoft.entityframeworkcore.8.0.2.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.2\\microsoft.entityframeworkcore.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.2\\microsoft.entityframeworkcore.analyzers.8.0.2.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.1\\microsoft.extensions.configuration.binder.8.0.1.nupkg.sha512",
