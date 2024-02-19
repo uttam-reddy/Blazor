@@ -1,9 +1,9 @@
 ﻿@page "/edit-user"
 @page "/edit-user/{id:int}"
+@inject IUserService userService
 
 
-
-<EditForm Model="user" OnSubmit="HandleSubmit">
+<EditForm Model="user" OnSubmit="HandleSubmit" FormName="editUser">
     <label>Name</label>
     <InputText @bind-Value ="user.Name" >@user.Name</InputText>
     <button type="submit" class="btn btn-primary">Submit</button>
@@ -12,12 +12,13 @@
 @code {
     [Parameter]
     public int? Id { get; set; }
-    Users user = new Users { Name = string.Empty };
+    [SupplyParameterFromForm]
+    Users user { get; set;  } = new Users { Name = string.Empty };
 
 
     async Task HandleSubmit()
     {
-        
+        await userService.CreateUser(user);
     }
 
 }
